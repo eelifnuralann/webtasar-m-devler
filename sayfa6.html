@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Farklı CSS Kutu Modeli Örneği</title>
+
+    <style>
+        /* Genel Sayfa Stili */
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .kutu {
+            box-sizing: border-box; /* Padding ve border boyuta dahil olsun */
+            width: 320px;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .kutu:hover {
+            transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+        }
+        .kutu-6 {
+            background: #e0e5ec;
+            border-radius: 16px;
+            box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
+            border: none;
+        }
+        .kutu-6 h3 { color: #4a5568; margin-top: 0; }
+
+        </style>
+</head>
+<!-- 6. Kutu -->
+    <div class="kutu kutu-6">
+        <h3>6. Soft UI (Neumorphism)</h3>
+        <p>Kabartmalı ve gömülü gibi görünen yumuşak 3D gölgeli kutu.</p>
+    </div>
+</body>
+</html>

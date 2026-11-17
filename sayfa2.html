@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Farklı CSS</title>
+
+<style>
+/* Genel Sayfa Stili */
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+ .kutu {
+            box-sizing: border-box; /* Padding ve border boyuta dahil olsun */
+            width: 320px;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .kutu:hover {
+            transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+        }
+        .kutu-2 {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        }
+        .kutu-2 h3 { color: #3f51b5; margin-top: 0; }
+</style>
+</head>
+<!-- 2. Kutu -->
+    <div class="kutu kutu-2">
+        <h3>2. Cam Efekti (Glass)</h3>
+        <p>Bulanık arka planlı ve şeffaf buzlu cam görünümlü kutu.</p>
+    </div>
+</body>
+</html>

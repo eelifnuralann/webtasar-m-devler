@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>10 Farklı CSS Kutu Modeli Örneği</title>
+</head>
+<style>
+/* Genel Sayfa Stili */
+    body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .kutu {
+            box-sizing: border-box; /* Padding ve border boyuta dahil olsun */
+            width: 320px;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .kutu:hover {
+            transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+        }/* 1. Klasik Sevimli Kedi Kutusu */
+        .kutu-1 {
+            background-color: #ffffff;
+            border: 2px solid #ff4081;
+            box-shadow: 0 4px 10px rgba(255, 64, 129, 0.15);
+        }
+        .kutu-1 h3 { color: #ff4081; margin-top: 0; }
+
+</style>
+</head>
+
+
+    <h1>10 Farklı Kutu Modeli Tasarımı</h1>
+
+    <!-- 1. Kutu -->
+    <div class="kutu kutu-1">
+        <h3>1. Pembe Kedi Kutusu</h3>
+        <p>Klasik kenarlıklı ve hafif pembe gölgeli şık bir kart tasarımı.</p>
+    </div>
+
+    </body>
+    </html>

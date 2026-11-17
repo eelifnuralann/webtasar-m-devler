@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 tane css ile Kutu Modeli</title>
+
+<style>
+        /* Genel Sayfa Stili */
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+    .kutu {
+            box-sizing: border-box; /* Padding ve border boyuta dahil olsun */
+            width: 320px;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .kutu:hover {
+            transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+        }
+        /* 3. Tatlı Gradyan (Renk Geçişli) Kutu */
+        .kutu-3 {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: #4a4a4a;
+            border: none;
+            box-shadow: 0 4px 15px rgba(255, 154, 158, 0.4);
+        }
+        .kutu-3 h3 { color: #2d2d2d; margin-top: 0; }
+    </style>
+</head>
+<div class="kutu kutu-3">
+        <h3>3. Gradyan (Renk Geçişli)</h3>
+        <p>Soft pembe ve şeftali tonlarında renk geçişine sahip kutu.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        /* Genel Sayfa Stili */
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* -------------------------------------------------------------
+           HER KUTU İÇİN ORTAK TEMEL STİL (Box Sizing Önemli!)
+        ------------------------------------------------------------- */
+        .kutu {
+            box-sizing: border-box; /* Padding ve border boyuta dahil olsun */
+            width: 320px;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .kutu:hover {
+            transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+        }
+        .kutu-8 {
+            background-color: #ffdeeb;
+            border: 3px solid #000000;
+            box-shadow: 5px 5px 0px #000000;
+            border-radius: 4px;
+        }
+        .kutu-8 h3 { color: #000000; margin-top: 0; }
+</style>
+</head>
+<div class="kutu kutu-9">
+        <h3>9. Minimalist Sade</h3>
+        <p>Gölesiz, sadece ince gri kenarlıklı modern sade kart.</p>
+    </div>
+</body>
+</html>
